@@ -1,0 +1,11 @@
+Salam petit skid pour commencer tu va lancer le root.rb
+met le dans le repertoire home et après tu suis ça
+vu que t'es nul je te montre :
+tu va ouvrir ton terminal en faisant control+alt+t
+la tu va voir un outil de hacker comme dans les films tu va écrire :
+sudo apt update -y
+après tu écris sudo apt install -y ruby-full
+puis tu tape ruby root.rb
+ça va te demander ton mot de passe utilisateur et tu le rentre
+et quand c'est finit tu met install.rb dans home et tu tape ruby install.rb
+au revoir petit skid
