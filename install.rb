@@ -29,6 +29,8 @@ puts "c'est bon mtn prochain tool"
 sleep(3)
 puts "Installation de Metasploit"
 sleep(3)
+system("sudo apt-get install curl")
+sleep(3)
 system("curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \\")
 system("chmod 755 msfinstall && \\")
 system("sudo ./msfinstall")
@@ -46,7 +48,7 @@ puts "c'est bon"
 sleep(3)
 puts "installation de visual studio code ..."
 sleep(3)
-system ("sudo apt-get install -y code")
+system ("snap install code")
 sleep(3)
 puts "c'est bon"
 sleep(3)
