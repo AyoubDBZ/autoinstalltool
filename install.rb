@@ -48,7 +48,17 @@ puts "c'est bon"
 sleep(3)
 puts "installation de visual studio code ..."
 sleep(3)
-system ("snap install code")
+system ("curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg")
+sleep(3)
+system ("sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/")
+sleep(3)
+system("sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'")
+sleep(3)
+system ("sudo apt-get install apt-transport-https")
+sleep(3)
+system("sudo apt-get update")
+sleep(3)
+system("sudo apt-get install code")
 sleep(3)
 puts "c'est bon"
 sleep(3)
